@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.page {margin-left:10%;
+	margin-right:10%;
+	margin-top:27px;
+	margin-bottom:27px;
+}
+
+.title{ text-align:center; 
+	font-family:"Times New Roman", Times, serif; 
+	font-size:27px; 
+	font-weight:bold;
+	margin:2.7px
+}
+.author{ text-align:center; 
+	font-family:"Times New Roman", Times, serif; 
+	font-size:17px; 
+	margin:27px;
+}
+
+.splash { text-align:center;
+}
+
+.abstract{
+	margin-top:27px;
+	margin-bottom:27px;
+}
+
+.section {border-top:thin dashed .CCC;
+	width:100%;
+	margin-top:27px;
+}
+
+img {
+	border:0;
+}
+
+.paper{ 
+}
+
+.footer{border-top:thin dashed .CCC;
+	width:100%;
+	margin-top:27px;
+}
+
+.bibtex{ background:.CCC
+}
+
+.section_title{font-weight:bold}
+
+.image{text-align:center; margin:7px}
+
+.image_caption{font-size:13px}
