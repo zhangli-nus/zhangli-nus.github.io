@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://yening.net/dfs/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Dynamic Facial Signature</title>
+<style type="text/css">
+<!--
+.mytitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+.mysection {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mycaption {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.mytext {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+.mytext a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #999;
+	text-decoration: underline;
+}
+.mycaption_small {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+-->
+</style>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+<table align="center" width="780" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td align="center" class="mytitle">Dynamic Facial Signature</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mysection">Overview</td>
+  </tr>
+  <tr>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">The term, dynamic facial signature, has been used in psychology to refer to the characteristic facial motions of individuals.&nbsp; It was proposed to explain the phenomenon that facial motions can help humans recognize familiar faces, for example, the faces of our families, friends or celebrities.&nbsp; If humans can make use of facial motion to recognize people, can the machines be trained to do the same?&nbsp; This project is proposed to answer this question.</div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mysection">Local Facial Skin Deformation Patterns</td>
+  </tr>
+  <tr>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td>
+    
+    </td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">Different faces exhibit different skin deformation patterns during facial motions, due to the individual differences in the physical properties of faces, for example, the shape of skull, the shape and strength of facial muscles, etc.&nbsp; Those skin deformation patterns are detectable by computers.<br>
+    </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">The proposed feature for personal identification is a combination of displacement vectors and skin deformation patterns, which are collected from a dense set of tracker points on face.&nbsp; The feature has been named <strong>Local Deformation Profile</strong>, or <strong>LDP</strong>.&nbsp; Both displacement similarity and deformation similarity are taken into account in comparing two LDPs.</div></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="77%" class="mytext"><div align="justify">LDP is a <span class="style">cross-expression</span> feature, which means that the identity evidence can be collected from any kind of facial motions.&nbsp; And its performance increases as more and more different kinds of facial motions are covered in training.&nbsp; LDP can even help recognize faces under heavy face makeup.</div></td>
+        <td width="2%">&nbsp;</td>
+        <td width="21%"><img src="./Dynamic Facial Signature_files/ajay.jpg" width="160" height="97" border="1"></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td class="mycaption">Original video</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221828.jpg" width="90" height="69" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221901.jpg" width="90" height="69" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221902.jpg" width="90" height="69" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221907.jpg" width="90" height="69" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221910.jpg" width="90" height="69" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/S074_002_00221913.jpg" width="90" height="69" border="1"></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td class="mycaption">Tracking</td>
+  </tr>
+  <tr>
+    <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f01.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f04.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f05.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f10.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f13.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/f15.jpg" width="90" height="113" border="1"></td>
+      </tr>
+    </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td class="mycaption">Displacement vector</td>
+  </tr>
+  <tr>
+    <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s01.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s04.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s05.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s10.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s13.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/s15.jpg" width="90" height="113" border="1"></td>
+      </tr>
+    </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="mycaption" style="padding-bottom: 0pt; padding-top: 0pt; ">Skin deformation pattern (stretch and compression)</span></td>
+  </tr>
+  <tr>
+    <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d01.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d04.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d05.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d10.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d13.jpg" width="90" height="113" border="1"></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="90"><img src="./Dynamic Facial Signature_files/d15.jpg" width="90" height="113" border="1"></td>
+      </tr>
+    </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="mycaption" style="padding-bottom: 0pt; padding-top: 0pt; ">In videos</span></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="209">
+          <video width="209" height="160" controls="">
+            <source src="videos/g01Computer.webm" type="video/webm">
+            Your browser does not support the video tag.  Please use IE9+, Firefox, Opera, Chrome, or Safari.
+          </video>
+        </td>
+        <td>&nbsp;</td>
+        <td width="128">
+          <video width="128" height="160" controls="">
+            <source src="videos/f01Computer.webm" type="video/webm">
+            Your browser does not support the video tag.  Please use IE9+, Firefox, Opera, Chrome, or Safari.
+          </video>
+        </td>
+        <td>&nbsp;</td>
+        <td width="128">
+          <video width="128" height="160" controls="">
+            <source src="videos/s01Computer.webm" type="video/webm">
+            Your browser does not support the video tag.  Please use IE9+, Firefox, Opera, Chrome, or Safari.
+          </video>
+        </td>
+        <td>&nbsp;</td>
+        <td width="128">
+          <video width="128" height="160" controls="">
+            <source src="videos/d01Computer.webm" type="video/webm">
+            Your browser does not support the video tag.  Please use IE9+, Firefox, Opera, Chrome, or Safari.
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td class="mycaption">Original video</td>
+        <td class="mycaption">&nbsp;</td>
+        <td class="mycaption">Tracking</td>
+        <td class="mycaption">&nbsp;</td>
+        <td class="mycaption">Displacement<br>
+          vector</td>
+        <td class="mycaption">&nbsp;</td>
+        <td class="mycaption">Deformation<br>
+          pattern</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mysection">Global Facial Expression Dynamics</td>
+  </tr>
+  <tr>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">
+      <p>Global facial expression dynamics is another computational dynamic facial signature we have used in our experiment.&nbsp; It is a fixed-expression feature, which means that the identity evidence can only be extracted from a specific type of facial expression.&nbsp; The following diagram shows an example of extracting smile dynamics.    </p>
+    </div></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td class="mytext"><div align="center">Original</div></td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0007_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0007.jpg" width="60" height="68" border="1"></a></td>
+        <td>&nbsp;</td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0009_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0009.jpg" width="60" height="68" border="1"></a></td>
+        <td>&nbsp;</td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0011_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0011.jpg" width="60" height="68" border="1"></a></td>
+        <td><div align="center" class="mytext">...</div></td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0022_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0022.jpg" width="60" height="68" border="1"></a></td>
+        <td>&nbsp;</td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0024_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0024.jpg" width="60" height="68" border="1"></a></td>
+        <td>&nbsp;</td>
+        <td width="60"><a href="http://yening.net/dfs/images/001_f_smile_19_03_2008_15_24_23_500_0026_big.jpg"><img src="./Dynamic Facial Signature_files/001_f_smile_19_03_2008_15_24_23_500_0026.jpg" width="60" height="68" border="1"></a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="64"><img src="./Dynamic Facial Signature_files/downarrow.jpg" width="64" height="19"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="60" class="mytext"><div align="center" class="mycaption_small">Smile Dynamics</div></td>
+      </tr>
+      <tr>
+        <td width="60" class="mytext"><div align="center">Optical Flow</div></td>
+        <td><a href="http://yening.net/dfs/images/F0007%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0007 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/F0009%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0009 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/F0011%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0011 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">...</div></td>
+        <td><a href="http://yening.net/dfs/images/F0022%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0022 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/F0024%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0024 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/F0026%20copy_1.png"><img src="./Dynamic Facial Signature_files/F0026 copy.png" width="60" height="68" border="1"></a></td>
+        <td class="mytext"><div align="center">=</div></td>
+        <td width="60"><a href="http://yening.net/dfs/images/fsum_1.png"><img src="./Dynamic Facial Signature_files/fsum.png" width="60" height="68" border="1"></a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="mytext"><div align="center">Zoom in</div></td>
+        <td><a href="http://yening.net/dfs/images/S0007%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0007 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/S0009%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0009 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/S0011%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0011 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">...</div></td>
+        <td><a href="http://yening.net/dfs/images/S0022%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0022 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/S0024%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0024 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">+</div></td>
+        <td><a href="http://yening.net/dfs/images/S0026%20copy_1.png"><img src="./Dynamic Facial Signature_files/S0026 copy.png" width="60" height="60" border="1"></a></td>
+        <td class="mytext"><div align="center">=</div></td>
+        <td><a href="http://yening.net/dfs/images/ssum_1.png"><img src="./Dynamic Facial Signature_files/ssum.png" width="60" height="60" border="1"></a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify"><strong>Smile dynamics</strong> shows high discriminating power in our experiment.&nbsp; Moreover, by combining smile dynamics with facial appearance (i.e. face shape and texture), we could even improve the chances of telling apart identical twins.</div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mysection">Publication</td>
+  </tr>
+  <tr>
+    <td><hr></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">Li Zhang, <strong>Ning Ye</strong>, <span lang="es" xml:lang="es">Elisa Martínez Marroquín</span>, Terence Sim. Expressive Deformation Profiles for Cross Expression Face Recognition. In <em>Proc. ICPR'12</em>, Tsukuba Science City, Japan, November, 2012. <a href="http://yening.net/dfs/docs/smile_icpr2012.pdf">paper</a> | <a href="http://yening.net/dfs/docs/ICPR.2012.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext"><strong>Ning Ye</strong> and Terence Sim. General Motion-Based Face Recognition. US Patent: <a href="http://patentscope.wipo.int/search/en/detail.jsf?docId=WO2011155902&amp;recNum=24&amp;docAn=SG2011000208&amp;queryString=pa/university&amp;maxRec=69609" target="_blank">WO 2011/155902</a></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify">Li Zhang, <strong>Ning Ye</strong>, <span lang="es" xml:lang="es">Elisa Martínez Marroquín</span>, Dong Guo and Terence Sim. New Hope for Recognizing Twins by Using Facial Motion. In <em>Proc. WACV'12</em>, Breckenridge, CO, USA, January, 2012. <a href="http://yening.net/dfs/docs/smile_wacv2012.pdf">paper</a> | <a href="http://yening.net/dfs/docs/WACV.2012.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify"><strong>Ning Ye</strong> and Terence Sim. Towards General Motion-Based Face Recognition. In <em>Proc. CVPR’10</em>, San Francisco, CA, USA, June 2010.  <a href="http://yening.net/dfs/docs/smile_cvpr2010.pdf">paper</a> | <a href="http://yening.net/dfs/docs/smile_cvpr2010_poster.pdf">poster (7MB)</a> | <a href="http://yening.net/dfs/docs/CVPR.2010.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify"><strong>Ning Ye</strong> and T. Sim. Motion-Based Face Recognition.<em> Technical presentation in BIC’10</em>, Sydney, Australia, May 2010.   <a href="http://yening.net/dfs/docs/smile_bic_sig.pdf">abstract (3MB)</a> | <a href="http://yening.net/dfs/docs/smile_bic_slides.pdf">slides (5MB)</a> | <a href="http://yening.net/dfs/docs/smile_bic_poster.pdf">poster (5MB)</a> | <a href="http://yening.net/dfs/docs/BIC.2010.05.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify"><strong>Ning Ye</strong> and Terence Sim. Combining Facial Appearance and Dynamics for Face Recognition. In<em> Proc. CAIP'09</em>, <span lang="de" xml:lang="de">Münster</span>, Germany, September, 2009.  <a href="http://yening.net/dfs/docs/smile_caip2009.pdf">paper</a> | <a href="http://yening.net/dfs/docs/smile_caip2009_poster.pdf">poster</a> | <a href="http://yening.net/dfs/docs/CAIP.978-3-642-03767-2_16.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext"><div align="justify"><strong>Ning Ye</strong> and Terence Sim. Smile, You're on Identity Camera. In <em>Proc. ICPR'08</em>, Tampa, FL, USA, December, 2008.   <a href="http://yening.net/dfs/docs/smile_icpr2008.pdf">paper</a> | <a href="http://yening.net/dfs/docs/smile_icpr2008_poster.pdf">poster</a> | <a href="http://yening.net/dfs/docs/ICPR.2008.4761850.txt">bibtex</a></div></td>
+  </tr>
+  <tr>
+    <td class="mytext">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mytext">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="mytext">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+
+</body></html>
