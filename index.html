@@ -71,7 +71,7 @@ Email: lizhang.nus2010[AT]gmail.com<br/>
 <div id="about" style="width:auto;margin-left:auto;margin-right:auto">
 <h2 id="research interest"> <font size="5" face="georgia">Short Bio</font></h2>
 <p> <font size="3" face="georgia">
-I obtained my Ph.D degree from School of Computing, National University of Singapore (NUS), where I was supervised by by<a href="https://tsim49.wixsite.com/terencesim"> Prof Terence Sim</a>. Before joining Alibaba, I was leading a research group in Mozat for two years, a local internet firm in Singapore. Up to date, I was granted five patents with over ten publications. I'm severing as the local organizer in Alibaba for  <a href="http://www.ccks2019.cn/en/?page_id=24">CCKS</a> and an adjunct supervisor in ShenZhen university. 
+I obtained my Ph.D degree from School of Computing, National University of Singapore (NUS), where I was supervised by by<a href="https://tsim49.wixsite.com/terencesim"> Prof Terence Sim</a>. Before joining Alibaba, I was leading a research group in Mozat for two years, a local internet firm in Singapore. Up to date, I was granted five patents with over ten publications shown in <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">my google profile</a>. I'm severing as the local organizer in Alibaba for  <a href="http://www.ccks2019.cn/en/?page_id=24">CCKS</a> and an adjunct supervisor in ShenZhen university. I am one of the main authors of a book, "Knowledge Graph: from theory to pratice". 
 <br>
 My research aims at exploiting deep learning on multi-modality data including text, image and video for face recognition, fashion analysis and geographic service.
 </font></p></div>
@@ -114,35 +114,164 @@ My research aims at exploiting deep learning on multi-modality data including te
 &bull;National Scholarship in 2007~2009
 </font></p></div>
 
-<h2 id="project">Projects</h2>
-<ul>
-  <li>Automatic POI Production and Smart Trip Generation.
-    <p>The details of this part can be viewed by opening fliggy application, a travel platform, or visit <a href="https://jingyan.baidu.com/article/b2c186c862e2aac46ef6ffb6.html">here</a> to see the tutorial. The fliggy poi production system, tmall new retail, koubei in taobao etc are mostly using the data provided by us.
-    </p></li>
-  <li>Deja Fashion: Smart Fashion Recommendation
-  <p>Download Deja and see details, or visit <a href="http://www.mozat.com/fashion">here </a>.</p></li>
-  <li>SemanticFace: Face Privacy Protection
- <p>We present the novel concept of Controllable Face Privacy. Existing methods that alter face images to conceal identity inadvertently also destroy other facial attributes such as gender, race or age. This all-or-nothing approach is too harsh. Instead, we propose a flexible method that can independently control the amount of identity alteration while keeping unchanged other facial attributes. See <a href="https://docs.wixstatic.com/ugd/f15036_5c792e5a56034c5d9be0b2b7fdd0bdcb.pdf">paper</a> for details </p>
-</li>
-  <li>Identical Twins Recognition BY Expression, Talk, Ear and Voice.  
-    <p>See <a href="expression.html"> Recognition by motion for details. </a></p></li>
-   <li>Face Effect Synthesis: Cartoon and Makeup.
-<P>This work is to synthesize face effect via image editing technology. The technology was once used in Shabik Chat app.</P>
-   </li>
-</ul>
+<div id="about" style="width:auto;margin-left:auto;margin-right:auto">
+<h2 id="projects"><font size="5" face="georgia">Projects</font></h2>
+<p> <font size="3" face="georgia">
+  <ol>
+    <li>Automatic Production System To Generate Point of Interest in Billion-level.<br>
+    Customer: Fliggy, Tmall, Koubei, Eleme <br>
+    My role: system architure and algorithm developer. <br>
+    Technique: Word Embedding(Skip-Gram, CBow, Glove, FastText, Elmo), Sentence Embedding, Text Classification
+    </li>
+    <li>Address Parsing and Building Mining for Smart Map Service.<br>
+    Customer: Taobao, Tmall, Taoxianda, Maochao<br>
+    My role: algorithm architure and researcher.<br>
+    Technique: Sequence Labeling(HMM, CRF, Bilstm-CRF etc), Pretrain Language Model
+    </li>
+    <li>Text Summary and Image Understnding for Short Video Generator.<br>
+    Customer: Fliggy, Middle Platform<br>
+    My role: algorithm leader. <br>
+    Technique: Image Athestic Evaluation, Image-Text Matching, Text Summary
+    </li>
+    <li>Fashion Analysis and Try-on Effect.<br>
+    Download Stylepedia app and see details, or visit <a href="http://www.mozat.com/fashion">here.</a><br>
+    My role: algorithm architure and researcher. <br>
+    Technique: FastRCNN etc, Image Classification(VGG, GoogleNet, ResidualNet), Moving Least Square Warpping
+    </li>
+    <li>Face Analysis.<br>
+    My role: algorithm architure and researcher. <br>
+    Technique: Face Detection, Face Cartoon(Possion image editing), <a href="makeup.html">Face Makeup</a><br>
+    </li>
+  </ol>
+
+</font></p></div>
+
+<div id="about" style="width:auto;margin-left:auto;margin-right:auto">
+<h2 id="projects"><font size="5" face="georgia">Publications</font></h2>
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <!-- paper one -->
+  <tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>SentPWNet: A Unified Sentence Pair Weighting Network for Task-specific Sentence Embedding</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Han Wang, Lingxiao Li, Wei Zhang, Huajun Chen</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/sentpwnet.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">Pair-based metric learning has been widely adopted to learn sentence embedding in many NLP tasks. However, it is known that the sentence representation can be biased when the sampled sentence pairs deviate from the true distribution of all sentence pairs. In this paper, instead of one time pair selection and learning on equal weighted pairs, we propose a unified locality weighting and learning framework. Extensive experiments on four public available datasets and a self-collected place search benchmark with 1.4 million places clearly demonstrate that our model consistently outperforms existing sentence embedding methods with comparable efficiency. Submitted in SIGKDD2020.</font></p></td>
+  </table>
+  </tr>
+  <br>
+
+  <!-- paper two -->
+  <tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>Multi-Relational Loss: A Relational Loss For Text and Image Embedding</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Lingxiao Li, Han Wang</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/multirelational.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">A family of pair based loss has been proposed to learn image embeddings. Recent works focus on utilizing similarity loss among same labels towards anchor points to weights the pairs, which would throw away many useful informational throught different pairs. In this paper, we propose a new multi-relational loss, which computes the weights based on all its locality neighborings including positive and negative neighbors. Extensive experiments on three public available datasets demontrates that our model can gain the state-of-the-art performence of metric leanring in both image retrieval and text retrieval tasks. In Submission to ECCV2020.</font></p></td>
+  </table>
+  </tr>  
+  <br>
+
+  <!-- paper three -->
+  <tr>
+  <a href="https://ieeexplore.ieee.org/document/8737513">
+  <font size="3" face="georgia"><u><strong>Brush like a Dentist: Accurate Monitoring of
+Toothbrushing via Wrist-Worn Gesture Sensing</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia">Chengwen Luo, Xingyu Feng,  Junliang Chen, Jianqiang Li, <u><strong>Li Zhang</u></strong>, Albert Y. Zomaya</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/dentist.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">Oral health has significant impact on people's over-all well-being. In this work, we propose Hygiea, an energy-efficient and highly-accurate toothbrushing monitoring system which exploits IMU-based wrist-worn gesture sensing using unmodified toothbrushes. Hygiea incorporates a number of novel signal preprocessing techniques to automatically transform the sensory input during arbitrary toothbrushing activities to the consistent user coordinate system. To distinguish different brushing actions, Hygiea leverages an emerging deep learning model to achieve fine-grained activity recognitions. Moreover, a POMDP model is incorporated for sampling control to balance activity detection and energy efficiency. Extensive real-world experiments show that the Hygiea system achieves a 11.7% accuracy gain compared to the state-of-the-art while maintaining energy-efficiency and zero modification on the toothbrushes. Published in INFORCOM2020.</font></p></td>
+  </table>
+  </tr>  
+  <br>
+
+  <!-- paper four -->
+  <tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>Controllable Face Privacy</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Terence Sim</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/privacy.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">We present the novel concept of Controllable Face Privacy. Existing methods that alter face images to conceal identity inadvertently also destroy other facial attributes such as gender, race or age. This all-or-nothing approach is too harsh. Instead, we propose a flexible method that can independently control the amount of identity alteration while keeping unchanged other facial attributes. To achieve this flexibility, we apply a subspace decomposition onto our face encoding scheme, effectively decoupling facial attributes such as gender, race, age, and identity into mutually orthogonal subspaces, which in turn enables independent control of these attributes. Our method is thus useful for nuanced face de-identification, in which only facial identity is altered, but others, such gender, race and age, are retained. Published in FG2015(ORAL).</font></p></td>
+  </table>
+  </tr>  
+  <br>
+
+  <!-- paper five -->
+  <tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>New Hope to Recognize Identical Twins: Expression, Ear, Talking and Voice</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Jing Li, Dong Guo, Terence Sim</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/twins.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">Identical twins pose an interesting challenge for recognition systems due to their similar appearance. Although various biometrics have been proposed for the problem, existing works are quite limited due to the difficulty of obtaining a twins database. To encourage the methods for twins recognition and make a fair comparison of them by using the same database, we collected an audio-visual twins database at the Sixth Mojiang International Twins Festival held on 1 May 2010,China. Our database contains 39 pairs of twins in total, including Chinese, American and Russian subjects. This database contains several face images, facial motion videos and audio records for each subject. To address twin recogntion, we propose to use <a href="expression.html">face motion</a>, talking pattern, voice, ear and face recognition. Six paper was published and we won <font color=red>Best Hornorable Mention in FG2013</font>. </font></p></td>
+  </table>
+  </tr>  
+  <br>
+
+  <!-- paper five -->
+  <tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>Toward Large-population Face Identification in Unconstrained Videos</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia">Luoqi Liu, <u><strong>Li Zhang</u></strong>, Hairong Liu, Shuicheng Yan</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/largescaleface.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">We investigate large-scale face identification in unconstrained videos with 1000 subjects. This problem is very challenging, and until now most studies have only considered the scenarios with a small number of subjects and videos captured in controlled laboratory environments. First, we set up a large-scale video database in an unconstrained environment, Celebrity-1000, with data collected from video-sharing websites. Second, we boost the efficiency of multitask joint sparse representation (MTJSR) algorithm for video-based face identification on Celebrity-1000. Extensive experiments show several orders-of-magnitude speedup with this new optimization method, and also demonstrate the superiorities of the accelerated MTJSR algorithm over several popular baseline algorithms.Published in IEEE Transactions on Circuits and Systems for Video Technology 2014</font>. </font></p></td>
+  </table>
+  </tr>  
+  <br>
+
+</table>
 
 
-<h2 id="publications">Selected Publication</h2>
-<p>After silent in research for a while, I restart to summary my industry work as paper conference. My works on sentence embedding, name entity recogntion and text generation are coming soon.</p>
 
-<ul>
-  <li><strong>Li Zhang</strong>, Wang Han, Lingxiao Li, Wei Zhang, Hua Jun. Sent<em>SIGKDD</em> </li>
-  <li><strong>Li Zhang</strong>, Terence sim; Controllable Face Privacy. <em>FG2015</em> </li>
-  <li>Luoqi Liu, <strong>Li Zhang</strong>, Shuicheng Yan; towards large population face identification in unconstrained videos. <em>Transcation in Circuits System and Video Technology</em>. 2014</li>
-  <li><strong>Li Zhang</strong>, Keng Teck Ma, Hossein Nejati, Lewis Foo, Terence Sim; A talking profile to distinguish identical twins. <em>FG2013</em>. Best Student Paper Honorable Mention Award.</li>
-  <li><strong>Li Zhang</strong>, Ning Ye, Elisa Martinez, Terence Sim; New Hope for Recognizing twins by using Facial Motion. <em>WACV2012</em>.</li>
-</ul>
-
+<div id="about" style="width:auto;margin-left:auto;margin-right:auto">
+<h2 id="books"><font size="5" face="georgia">Books</font></h2>
+<font size="3" face="georgia">
+&bull; <strong>Knowledge Graph: From Thoery to Practice. </strong>Mechanical Press. To Be Appeared. 
+<!-- &bull;CN Patent/Innovation: 基于图文匹配的智能实体速览系统 <strong>内部编号: 101247162</strong>, 2019<br>
+&bull;CN Patent/Innovation: 强化学习在数据一致性预测的应用 <strong>内部编号: 101052124</strong>, 2019<br>
+&bull;CN Patent/Innovation: 一套poi知识自动生产方案 <strong>内部编号: 100617702</strong>, 2019<br>
+&bull;CN Patent/Innovation: 基于知识图谱的推理计算方案 <strong>内部编号: 100830983</strong>, 2019<br>
+&bull;CN Patent/Innovation: 基于路径优化的智能行程方案 <strong>内部编号: 100830652</strong>, 2019<br> -->
+</font></p></div>
 
 <div id="about" style="width:auto;margin-left:auto;margin-right:auto">
 <h2 id="awards"><font size="5" face="georgia">Patents</font></h2>
