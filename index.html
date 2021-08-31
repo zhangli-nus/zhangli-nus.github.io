@@ -122,29 +122,17 @@ In general, I'm devoting my career to develop cutting-edge technology to improve
 <h2 id="projects"><font size="5" face="georgia">Projects</font></h2>
 <p> <font size="3" face="georgia">
   <ol>
-    <li><STRONG>POI Search Optimization</STRONG>. May 2018~now in Alibaba<br>
-    We build a system on cloud platform, Dataworks, to understand standard point of interest (poi) in billion-level for local shop search. This system can solve many well-known poi problems: a) correct inaccurate attributes for existing poi; b) enrich attributes of existing poi; c) supplement new poi. This project was serving the search on Fliggy、Alipay etc. <!--  This project has improved data quality in Fliggy (from 3M to 10M, accuracy from 58% to 98%), merchant settle-in efficiency in Tmall (200+% improvement) and gained over 100 million direct GMV through hotel reservation. We also use this system to serve for Koubei, Alipay and Eleme. This project has been highly recognized by our department and get rewarded.<br> -->
-    My role is in two fold: 1) design the architecture of this system; 2) develop algorithmatic components. Two papers are written and two patents are granted so far.<br>
-    Algorithm: Word Embedding (Skip-Gram, CBow, Glove, FastText, Elmo), Sentence Embedding, Text Classification, Image Aesthetic Classification
+  	<li><STRONG>Merchant Growth and Seller Algorithm for Taobao</STRONG>. May 2020~now in Alibaba<br>
     </li>
-    <li><STRONG>POI Recommendation and Address NER for User Info Center(AI+)</STRONG>. Sep 2019~now in Alibaba<br>
-    <!-- User Info Center(UIC) consists of more than 4 billions user info with their mailing address and person information. The mission of our team is to help the company understand users' location so that we can recommend shops and commodity for the users more accurate.<\br>
-    Existing address filling in Taobao is purely through text without accurate latitude and longitude, while it is very time-consuming and tedious for customers. This is more severe in local life business, since it demands accurate latitude and longitude for better logistic distribution. Therefore, w -->
-    We develop an intelligent system that can help user fill address via simple text pasting and conveniently pick poi through poi recommendation. The main challenge is the noisy input from customers and large number of candidate poi. Our system has been served for Taobao, Tmall, Taoxianda and Maochao.<!--  Our average parsing accuracy is 96% and poi ctr can improve 2%. During this project, We have accumulated 1.4 million building information with over 99% accuracy for Alibaba. One paper is under writing and one patent is grante -->d<br>
-    My role in this project is to develop algorithm components, such as address parsing and address matching.<br>
-    Algorithm: Sequence Labelling(HMM, CRF, BiLSTM-CRF etc), Pretrain Language Model
+    <li><STRONG>Entity Understanding for Local Life Search Optimization</STRONG>. May 2018~now in Alibaba<br>
+    Point of Interest (POI) and goods are important elements in local life. We build a data mining system to understand poi in billion-level. This system can solve many well-known poi problems: a) correct inaccurate attributes for existing poi; b) enrich attributes of existing poi; c) supplement new poi. This project was serving the search on Taobao、Alipay、Fliggy etc. 
     </li>
-<!--     <li><STRONG>POI Shopping Guide: Automatic Short Video Generation for Baoshilu(AI+)</STRONG>. Oct 2019~now in Alibaba<br>
-    Baoshilu is a shopping guide product in Alibaba. Our work is to help Baoshilu provide video shopping guide capability for merchants. In short, we provide a framework to generate short video with very noisy text and images from merchant and user generated contents. Our system mainly contains two components: 1) attractive image extraction and attractive text generation. 2) image-text matching that utilizes ConceptNet to connect image and text. This system is integrated into hotel release system. The overall accept rate for the synthesized video is 70%. See <a href=zhangli_nus.github.io_files/video/hotel.mp4>demos</a> here. A patent is granted. <br>
-    Algorithm: Image Aesthetic Evaluation, ConceptNet for Image-Text Matching, Text Genaration
-    </li> -->
-    <li><STRONG>Fashion E-commerce from Unconstrained Photos and Virtual Try-on</STRONG>. June 2016~Oct 2017 in Mozat<br>
-    Download Stylepedia app and see details. We develop fashion parsing service with Django and Nginx. The service packages include hash-tag recognition (OCR), fashion garment detection (SOLO, FasterRCNN, YOLO etc) and image classification (GoogleNet, Residual Network, VGG etc.) and keypoint based try-on synthesis. The mAP can be up to 0.60 for typical fashion garments and the classification accuracy can be 0.95%. <br>
-    Algorithm: Image Detection, Image Classification, Moving Least Square Warpping
+    <li><STRONG>Address Parsing and LBS Recommendation</STRONG>. Sep 2019~now in Alibaba<br>
+    We develop an intelligent system that can help user fill address via simple text pasting and conveniently pick poi through poi recommendation. The main challenge is the noisy input from customers and large number of candidate poi. Our system has been served for Taobao, Tmall, Taoxianda and Maochao.
     </li>
-    <!-- <li><STRONG>Special Face Effect Synthesis</STRONG>. June 2015~July 2016 in Mozat<br> -->
-    <!-- We develop many face image editing tools for users. To convert face image into <a href=zhangli_nus.github.io_files/project/moment.jpg>realistic style</a>, we integrate a face detector into poisson image editing algorithm to conduct the synthesis. The accept rate is 95%. For <a href=zhangli_nus.github.io_files/project/mango.jpg>mango style</a>, we use landmark detection to exaggerate the most significant face features. The abnormality of face component is computed through a statistic analysis. For <a href="makeup.html">face makeup</a>, we develop a layer separation technique to synthesize the effect in LAB colorspace. Each face image is warped into the target face image based on the detected facial landmark at beginning. The accept rate is about 94%.  -->
-    <!-- These tools were applied on Shabik, a leading chatting app in Middle East. -->
+    <li><STRONG>Multimodel Fashion Understanding from Unconstrained Photos</STRONG>. June 2016~Oct 2017 in Mozat<br>
+    Download Stylepedia app and see details. The service packages include hash-tag recognition (OCR), fashion garment detection (SOLO, FasterRCNN, YOLO etc) and image classification (GoogleNet, Residual Network, VGG etc.) and keypoint based try-on synthesis. The mAP can be up to 0.60 for typical fashion garments and the classification accuracy can be 0.95%. <br>
+    </li>
     <br>
     </li>
   </ol>
@@ -154,31 +142,43 @@ In general, I'm devoting my career to develop cutting-edge technology to improve
 <div id="about" style="width:auto;margin-left:auto;margin-right:auto">
 <h2 id="projects"><font size="5" face="georgia">Publications</font></h2>
 <table width="780" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-  <!-- <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en"> -->
-  <font size="3" face="georgia"><u><strong>A new TMM paper on content understanding coming soon. </u></strong></font>
-</u>
-</tr>
-  <br>
 
 
   <!-- paper one -->
   <tr>
   <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
-  <font size="3" face="georgia"><u><strong>SentPWNet: A Unified Sentence Pair Weighting Network for Task-specific Sentence Embedding</u></strong></font>
+  <font size="3" face="georgia"><u><strong>Jointly Multi-similarity Loss for Deep Metric Learning</u></strong></font>
   </a>
   </tr>
   <br>
   <tr>
-  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Han Wang, Lingxiao Li, Wei Zhang</font>
+  <font size="3" face="georgia"><u><strong>Li Zhang</u></strong>, Shitian Shen, Han Wang, Lingxiao Li</font>
   </tr>
   <tr>
   <table width="780" border="0" cellspacing="0" cellpadding="0">
   <td width="300"><img src="zhangli_nus.github.io_files/project/sentpwnet.jpg" width="300" border=1 /></td>
-  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">Pair-based metric learning has been widely adopted to learn sentence embedding in many NLP tasks. However, it is known that the sentence representation can be biased when the sampled sentence pairs deviate from the true distribution of all sentence pairs. In this paper, instead of one time pair selection and learning on equal weighted pairs, we propose a unified locality weighting and learning framework. Extensive experiments on four public available datasets and a self-collected place search benchmark with 1.4 million places clearly demonstrate that our model consistently outperforms existing sentence embedding methods with comparable efficiency. http://arxiv.org/abs/2005.11347.</font></p></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">Pair-based metric learning has been widely adopted to learn sentence embedding in many NLP tasks. However, it is known that the sentence representation can be biased when the sampled sentence pairs deviate from the true distribution of all sentence pairs. In this paper, instead of one time pair selection and learning on equal weighted pairs, we propose a unified locality weighting and learning framework. Extensive experiments on four public available datasets and a self-collected place search benchmark with 1.4 million places clearly demonstrate that our model consistently outperforms existing sentence embedding methods with comparable efficiency. Published in <font color=red>ICDM2022</font>.</font></p></td>
   </table>
   </tr>
   <br>
+
+<tr>
+  <a href="https://scholar.google.com/citations?user=0yMyTyQAAAAJ&hl=en">
+  <font size="3" face="georgia"><u><strong>Discover Micro-influencers for Brands via Better Understanding</u></strong></font>
+  </a>
+  </tr>
+  <br>
+  <tr>
+  <font size="3" face="georgia">Shaokun Wang, Tian Gan, Yuan Liu, <u><strong>Li Zhang</u></strong>, Jianlong Wu</font>
+  </tr>
+  <tr>
+  <table width="780" border="0" cellspacing="0" cellpadding="0">
+  <td width="300"><img src="zhangli_nus.github.io_files/project/sentpwnet.jpg" width="300" border=1 /></td>
+  <td width="480" height="200" valign="top"><p align="justify" class="myintro"><font size="3" face="georgia">With the rapid development of the influencer marketing industry in recent years, the cooperation between brands and micro-influencers on marketing has achieved much attention. As a key sub-task of influencer marketing, micro-influencer recommendation is gaining momentum. However, in influencer marketing campaigns, it is not enough to only consider marketing effectiveness. Towards this end, we propose a concept-based micro-influencer ranking framework, to address the problems of marketing effectiveness and self-development needs for the task of micro-influencer recommendation. Marketing effectiveness is improved by concept-based social media account representation and a micro-influencer ranking function. We conduct social media account representation from the perspective of historical activities and marketing direction. And two adaptive learned metrics, endorsement effect score and micro-influencer influence score, are defined to learn the micro-influencer ranking function. To meet self-development needs, we design a bi-directional concept attention mechanism to focus on brands and micro-influencers marketing direction over social media concepts. Interpretable concept-based parameters are utilized to help brands and micro-influencers make marketing decisions. Extensive experiments conducted on a real-world dataset demonstrate the advantage of our proposed method compared with the state-of-the-art methods. Published in <font color=red>IEEE Transactions on Multimedia 2021</font></p></td>
+  </table>
+  </tr>
+  <br>
+
 
   <!-- paper two -->
 <!--   <tr>
